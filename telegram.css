@@ -1,0 +1,91 @@
+body{
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+.set{
+    height: 100vh;
+    margin: 0;
+}
+
+#search{
+    width: 100%;
+    border-radius: 20px;
+    height: 45px;
+    border: 0;
+    background-color: rgb(245,245,245);
+    padding: 20px 20px 20px 50px;
+    background-image: url("loupe.png");
+    background-size: 20px;
+    background-position: 10px;
+    background-repeat: no-repeat;
+    color: rgb(245,245,245);
+}
+
+.bars{
+    border-radius: 50%;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.bars:hover{
+    background-color: rgb(245,245,245);
+}
+
+.folders{
+    border-bottom: 3px solid  blue;
+    text-align: center;
+}
+
+.chat{
+    background-image: url("tbg.jpg");
+}
+
+#penbtn{
+    position: absolute;
+    top: 890px;
+    left: 400px;
+    width: 60px;
+    height: 60px;
+    border-radius:50%;
+    background-color: rgb(56, 155, 248);
+    text-align: center;
+    cursor: pointer;
+    animation-name: penbtn;
+    animation-duration: .7s;
+    animation-play-state: paused;
+
+}
+
+
+@keyframes penbtn {
+
+    0%   { top: 1100px; left: 400px; }
+    
+    100% {top: 890px; left: 400px; }
+
+}
+
+@keyframes reverse {
+
+    0%  {top: 890px; left: 400px; }
+    
+    100% { top: 1100px; left: 400px; }
+
+}
+
+.navcont{
+    height: 450px;
+    width: 270px;
+    position: absolute;
+    left: 35px;
+    top: 55px;
+    border-radius: 10px;
+    background: rgba(255,255,255,0.733333);
+    -webkit-box-shadow: 0px 0px 5px 1px rgba(217,217,217,1);
+    -moz-box-shadow: 0px 0px 5px 1px rgba(217,217,217,1);
+    box-shadow: 0px 0px 5px 1px rgba(217,217,217,1);
+    display: none;
+    backdrop-filter: blur(10px);
+}
